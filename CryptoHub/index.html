@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        .minTest {
+        }
+    </style>
+</head>
+<body>
+<div class="input-cryptocurrency"></div>
+<div class="container">
+
+<!--//sidebar start-->
+
+    <ul id="slide-out" class="side-nav">
+        <h4>Sort currency</h4>
+        <!--<li><div class="user-view">-->
+            <!--<div class="background">-->
+                <!--<img src="img/bitcoin.png">-->
+            <!--</div>-->
+            <!--<a href="#!user"><img class="circle" src="images/yuna.jpg"></a>-->
+            <!--<a href="#!name"><span class="white-text name">Bootcamp</span></a>-->
+            <!--<a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>-->
+        <!--</div></li>-->
+        <a id="btn-sort-max" class="waves-effect waves-light btn">min</a>
+        <a id="btn-sort-min" class="waves-effect waves-light btn">max</a>
+        <a id="btn-sort-hour" class="waves-effect waves-light btn">1hour
+        </a>
+        <!--<li><a class="subheader">Subheader</a></li>-->
+        <a id="btn-sort-day" class="waves-effect waves-light btn">per day</a>
+        <a id="btn-sort-alph" class="waves-effect waves-light btn">alph</a>
+        <a id="btn-sort-rank" class="waves-effect waves-light btn">rank</a>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    <!--//sidebar end-->
+
+
+
+
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4 class="modal-title"></h4>
+        <!--<p>A bunch of text</p>-->
+
+        <div class="container-grap">
+            <div class="grap">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+</div>
+
+<div class="box card-responsive"></div>
+
+        <!--<div class="card">-->
+            <!--<div class="card-image">-->
+                <!--<img src="http://materializecss.com/images/sample-1.jpg">-->
+                <!--<span class="card-title">Card Title</span>-->
+                <!--<a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">add</i></a>-->
+            <!--</div>-->
+            <!--<div class="card-content">-->
+                <!--<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+<script src="js/sort.js"></script>
+<script src="graph2.js"></script>
+<script src="js/find_curency.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

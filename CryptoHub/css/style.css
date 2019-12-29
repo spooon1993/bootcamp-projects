@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow:hidden;
+    padding: 20px;
+    background: lightslategray;
+}
+
+.card-responsive{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-around;
+}
+.col {
+    width: auto;
+}
+
+.waves-effect{
+    /*display: block;*/
+    margin-bottom: 10px;
+}
+
+.modal.modal-fixed-footer {
+    height: 85%;
+}
+.modal {
+    max-height: 100vh;
+    width: 80%;
+    top: 5%;
+}
+
+#slide-out {
+    padding-top: 10px;
+}
+
+#slide-out a {
+    display: block;
+}
+
+#slide-out h4 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+@media (min-width: 320px) {
+    .card-responsive {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .card-responsive {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
+@media  (min-width: 480px) {
+    .card-responsive  {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .card-responsive {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width: 601px) {
+    .card-responsive {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+}
+@media  (min-width: 768px) {
+    .card-responsive {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .card-responsive {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media  (min-width: 960px) {
+    .card-responsive {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .card-responsive {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .card-responsive  {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .card-responsive {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.up {
+    color: rgba(9, 230, 52, 1);
+    font-size: 1.1rem;
+    font-weight: bold;
+ }
+.down {
+    color: rgba(230, 58, 54, 1);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card .card-image {
+    padding-top: 20px;
+}
+
+.card .card-image img {
+    width: 50%;
+    margin: auto;
+    max-height: 220px;
+    min-height: 220px;
+}
+.card .card-image .card-title {
+    color: black;
+    display: block;
+    position: static;
+    text-align: center;
+    font-weight: bold;
+}
+.change-box {
+    display: flex;
+}
+.card-content .change-box .change-item {
+    display: block;
+    /* width: 90px; */
+    height: 30px;
+    margin: auto;
+    font-weight: 500;
+}
+.card-sub-title {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container-grap div {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+a {
+    color: orange;
+}
+.cryptocurrency {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    color: #fff721;
+}
